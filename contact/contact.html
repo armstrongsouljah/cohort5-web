@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact / CodeQueen</title>
+</head>
+<body>
+    <div id="contact-form">
+        <h1>Contact Us</h1>
+
+        <form method="POST" action=".">
+           <div class="input-field">
+               <label for="first_name">First Name:</label>
+               <input type="text" placeholder="Jane" id="first_name" name="first_name" />
+           </div>
+           <div>
+            <label for="last_name">Last Name:</label>
+            <input type="text" placeholder="Doe" id="last_name" name="last_name" />
+        </div>
+        <!-- <button type="submit">Save</button>  -->
+        <div class="input-field">
+            <input type="submit" value="Save">
+        </div>
+
+        </form>
+    </div>
+
+
+    <hr>
+
+    <!-- simple form without using divs -->
+    <h3>Form 2</h3>
+    <form id="sample" action="." method="GET">
+        <label for="full_name">Full Name</label> <br>
+        <input type="text" name="full_name" id="full_name"> <br>
+
+        <label for="email">Email</label> <br>
+        <input type="email" name="email" id="email"> <br>
+
+        <label for="message">Message</label> <br>
+        <textarea cols="43" rows="11" name="message"></textarea> <br>
+        <input type="submit" value="Send1">
+        <button type="submit">Send2</button>
+    </form>
+    <!-- TODO -->
+    <!-- Process the form with javascript -->
+    <script>
+          const form = document.querySelector("#sample")
+          form.addEventListener('submit', (e) => {
+              // sending to email "hypothetically"
+              e.preventDefault();
+              let full_name, email, message
+              full_name = form.full_name.value
+              email  = form.email.value
+              message = form.message.value
+
+              console.log(full_name, email, message)
+              form.reset()
+          })
+    </script>
+</body>
+</html>
