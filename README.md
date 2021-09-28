@@ -7,6 +7,8 @@
 - Lesson 7 - [Intro to css](https://github.com/armstrongsouljah/cohort5-web/tree/intro-to-css)
 - Lesson 8 - [Style the pages](https://github.com/armstrongsouljah/cohort5-web/tree/style-content)
 - Lesson 10 - [More on Css](https://github.com/armstrongsouljah/cohort5-web/tree/more-on-css)
+- Lesson 11 [Css overlay background](https://github.com/armstrongsouljah/cohort5-web/tree/overlay-background)
+- Lesson 11 [Intro to flexbox](https://github.com/armstrongsouljah/cohort5-web/tree/grid-and-flex)
 
 #### Author: Armstrong Muhwezi
 [Twitter](https://twitter.com/armstrongsenior)
