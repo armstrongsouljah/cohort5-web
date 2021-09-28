@@ -6,6 +6,7 @@
 - Lesson 6 - [Forms and tables](https://github.com/armstrongsouljah/cohort5-web/tree/forms-and-tables)
 - Lesson 7 - [Intro to css](https://github.com/armstrongsouljah/cohort5-web/tree/intro-to-css)
 - Lesson 8 - [Style the pages](https://github.com/armstrongsouljah/cohort5-web/tree/style-content)
+- Lesson 10 - [More on Css](https://github.com/armstrongsouljah/cohort5-web/tree/more-on-css)
 
 #### Author: Armstrong Muhwezi
 [Twitter](https://twitter.com/armstrongsenior)
