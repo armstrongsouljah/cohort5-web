@@ -8,11 +8,41 @@
     <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
+    <nav>
+        <ul class="navbar fixed">
+            <li class="nav-item"><a class="active" href="#">Faq</a></li>
+            <li class="nav-item"><a href="#">Contact</a></li>
+            <li class="nav-item"><a href="#">About</a></li>
+            <li class="nav-item"><a href="#">Queens</a></li>
+        </ul>
+    </nav>
     <header>
+        
         <h1>Welcome to CodeQueen Digital Platform</h1>
     </header>
 
     <div class="container">
+        <div class="example">
+            <div id="right">
+                right
+            </div>
+            <div id="left">
+                left
+            </div>
+        </div>
+
+        <!-- <div class="floater clearfix">
+            <p id="sample">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione 
+                tempora quis numquam quaerat, quidem tenetur quisquam veritatis a 
+                iste ea corporis accusantium, animi magnam ipsa rem quasi quos 
+                vel autem qui debitis. Ut, itaque eligendi.
+            psa rem quasi quos 
+                vel autem qui debitis. Ut, itaque eligendi.
+                <img src="img/pic.png" alt="Lighthouse" id="pic">
+            </p>
+            
+        </div> -->
+        <!-- TODO fix me -->
         <div class="card first-card">   
             <h5 class="title">post heading</h5>  
             <div class="content">
@@ -31,7 +61,7 @@
             </div> 
         </div>
         
-        <div id="second" class="card">   
+        <div id="second" class="card static">   
             <h5 class="title">post heading</h5> 
             <div class="content">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
@@ -49,7 +79,7 @@
             </div> 
         </div>
 
-        <div class="card">   
+        <div class="card relative">   
             <h5 class="title">post heading</h5>  
             <div class="content">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
@@ -103,7 +133,7 @@
             </div> 
         </div>
 
-        <div class="card">   
+        <div class="card absolute">   
             <h5 class="title">post heading</h5>  
             <div class="content">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
@@ -121,7 +151,7 @@
             </div> 
         </div>
 
-        <div class="card">   
+        <div class="card overflow">   
             <h5 class="title">post heading</h5>  
             <div class="content">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
@@ -336,6 +366,9 @@
             <h5>Sample Article</h5>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus deserunt perferendis doloremque?
         </article>
+        <div class="bottom">
+            I am fixed
+        </div>
     </div>
     
     <footer>

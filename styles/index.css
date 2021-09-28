@@ -13,7 +13,7 @@ body {
 } */
 header{
     text-align: center;
-    background: black;
+    background:#A2CDCD;
     height:240px;
     padding:105px 0px 105px 0px;
     font-size: 25pt;
@@ -82,3 +82,106 @@ header h1{
     box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.19);
     cursor: pointer;
 }
+
+/* navigation menu */
+.navbar {
+    background: #3D56B2;
+    height: 70px;
+    margin: 0;
+}
+li{
+    list-style-type: none;
+    float:left;
+    padding: 21px;
+
+}
+li a {
+    text-decoration: none;
+    color: lightgrey;
+}
+li a:hover{
+    color: white; 
+    background: black;
+    border-radius: 9px;
+    padding:9px;
+} 
+/* li a.active{
+    color: green; 
+}  */
+
+.navbar > li:last-child {
+    float: right;
+    margin-right:6px ;
+}
+
+.example {
+    height: 150px;
+    background: linear-gradient(white, blue);
+    margin: 5px;
+    padding:4px;
+    display: none; /*  used to hide element  */
+}
+#right {
+    float: right;
+}
+#left {
+    float:left;
+}
+.floater{
+    min-height: 150px;
+    border: 1px solid blue;
+}
+#sample {
+    float:left;
+}
+img {
+   clear:left;
+}
+/* .clearfix {
+    overflow: auto;
+}
+
+div.static {
+    position: static;
+    border: 3px solid #73AD21;
+  }
+
+  div.relative {
+    position: relative;
+    left: 30px;
+    border: 3px solid red;
+  } */
+
+
+
+  /* div.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    top:21px;
+    width: 300px;
+    border: 3px solid #73AD21;
+  }
+
+  .bottom{
+      position: fixed;
+      bottom: 0;
+      right:0;
+      width: 300px;
+      border: 3px solid #73AD21;
+  }
+
+  div.absolute {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #73AD21;
+    overflow-y: auto;
+  }
+  .overflow {
+      height:50px;
+      width:50px;
+      overflow: auto;
+  } */
