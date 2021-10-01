@@ -9,6 +9,7 @@
 - Lesson 10 - [More on Css](https://github.com/armstrongsouljah/cohort5-web/tree/more-on-css)
 - Lesson 11 [Css overlay background](https://github.com/armstrongsouljah/cohort5-web/tree/overlay-background)
 - Lesson 11 [Intro to flexbox](https://github.com/armstrongsouljah/cohort5-web/tree/grid-and-flex)
+- Lesson 12 [Grid](https://github.com/armstrongsouljah/cohort5-web/tree/grid-and-flex)
 
 #### Author: Armstrong Muhwezi
 [Twitter](https://twitter.com/armstrongsenior)
