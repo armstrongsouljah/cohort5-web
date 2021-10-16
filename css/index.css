@@ -1,0 +1,40 @@
+body {
+    background-color: black;
+    color: #f2f2f2;
+    width:80%;
+    margin: auto;
+}
+
+.container {
+    /* background-color: purple; */
+    /* display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-flow: row wrap;
+    flex-direction: row;
+    flex:1; */
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 9px;
+}
+
+.card {
+    background-color: purple;
+    padding: 12px;
+}
+
+.btn, .btn-block {
+    outline: none;
+    background-color: rebeccapurple;
+    color: white;
+    border: none;
+    padding: 7px;
+    margin-top: 3px;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+}
+

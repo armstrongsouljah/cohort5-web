@@ -1,0 +1,37 @@
+body {
+    background-color: black;
+    color: orange;
+    width: 80%;
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+}
+form {
+    width: 50%;
+    margin: auto;
+}
+input::placeholder {
+    color:white;
+}
+input[type='text'], input[type='email'], input[type='password'] {
+   background-color: orchid;
+   color:white;
+   height:35px;
+   width: 100%;
+   border:none;
+   outline: none;
+   border-bottom: 1px solid black;
+   margin-top:3px;
+   padding: 3px;
+}
+
+input[type='submit'] {
+    width:40%;
+    padding:7px;
+    border:none;
+}
+
+input{
+    border-radius: 4px;
+}
