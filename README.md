@@ -11,5 +11,6 @@
 - Lesson 11 [Intro to flexbox](https://github.com/armstrongsouljah/cohort5-web/tree/grid-and-flex)
 - Lesson 12 [Grid](https://github.com/armstrongsouljah/cohort5-web/tree/grid-and-flex)
 - Lesson 25 [Dom manipulation](https://github.com/armstrongsouljah/cohort5-web/tree/html-js-css)
+- Lesson 28 [Fetching data from an API](https://github.com/armstrongsouljah/cohort5-web/tree/fetch-data)
 #### Author: Armstrong Muhwezi
 [Twitter](https://twitter.com/armstrongsenior)
