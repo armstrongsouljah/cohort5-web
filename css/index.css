@@ -1,0 +1,14 @@
+ul {
+    border: 1px solid black;
+    width:50%;
+    list-style-type: none;
+}
+li.todo-item {
+    list-style: none;
+    border-bottom: 1px solid gray;
+    width: 100%;
+}
+
+.checkbox {
+    float: right;
+}
