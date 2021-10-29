@@ -11,11 +11,13 @@
         <input type="email" required name="email" placeholder="mail@example.com"> <br>
         <input type="password" required name="password" placeholder="password"> <br>
         <input type="submit" value="Login">
+        <span></span>
     </form>
 </body>
 
 <script>
    const form = document.querySelector('form');
+   const span = document.querySelector('span');
    form.addEventListener('submit', e => {
        e.preventDefault();
        let email = form.email.value;
@@ -26,6 +28,9 @@
            password
        })
        let url = `${BASE_URL_PROD}/auth/login`;
+       span.textContent = 'Loggin you in';
+       span.style.color = 'blue';
+
        fetch(url, {
            method: 'POST',
            headers: {
@@ -35,8 +40,24 @@
        })
        .then (response => response.json())
        .then(data => {
-               localStorage.setItem('token', data.token)
-               window.location = '/'
+               if (data.token) {
+                   span.textContent = data.message;
+                   span.style.color = 'green'
+                   localStorage.setItem('token', data.token)
+                   setTimeout(() => {
+                    span.textContent = '';
+                    form.reset();
+                    window.location = '/'
+                   }, 3000)
+                   
+               } else {
+                   span.textContent = data.message;
+                   span.style.color = 'red'
+                   setTimeout(() => {
+                    span.textContent = '';
+                   }, 3000)
+               }
+               
            })
        .catch(error => console.error(error))
    })
