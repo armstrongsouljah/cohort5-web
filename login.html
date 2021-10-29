@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action=".">
+        <input type="email" required name="email" placeholder="mail@example.com"> <br>
+        <input type="password" required name="password" placeholder="password"> <br>
+        <input type="submit" value="Login">
+    </form>
+</body>
+
+<script>
+   const form = document.querySelector('form');
+   form.addEventListener('submit', e => {
+       e.preventDefault();
+       let email = form.email.value;
+       let password = form.password.value;
+       const BASE_URL_PROD = 'https://cohort5-api.herokuapp.com'
+       let payload = JSON.stringify({
+           email,
+           password
+       })
+       let url = `${BASE_URL_PROD}/auth/login`;
+       fetch(url, {
+           method: 'POST',
+           headers: {
+               'Content-Type': 'application/json'
+           },
+           body: payload
+       })
+       .then (response => response.json())
+       .then(data => {
+               localStorage.setItem('token', data.token)
+               window.location = '/'
+           })
+       .catch(error => console.error(error))
+   })
+</script>
+</html>

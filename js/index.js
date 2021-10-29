@@ -79,3 +79,9 @@ function markAsComplete(elem, todo) {
 
 
 fetchTodos()
+
+window.addEventListener('load', e=> {
+    e.preventDefault();
+    const token = localStorage.getItem('token')
+    if(!token) window.location = './login.html'
+})
